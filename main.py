@@ -36,7 +36,7 @@ def main_func():
     while True:
         response = requests.get(url)
         log_response(url, response.status_code)
-        cleanup_logs('.', 'website_status*.log', 3)
+        cleanup_logs('.', 'website_status*.log', 7)
         time.sleep(30)
 
 
